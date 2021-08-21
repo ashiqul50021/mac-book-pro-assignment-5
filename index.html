@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+</head>
+
+<body>
+    <!-- main area start -->
+    <main class="container">
+        <div class="row mt-1">
+            <!-- left side -->
+            <div class="col-md-6">
+                <img class="w-100" src="images/2.jpg" alt="">
+            </div>
+            <!-- left side end -->
+            <!-- right side -->
+            <div class="col-md-6 mt-5 mb-5">
+                <h2>Customize my Blue 27-inch Mac Book with Apple M1 chip.</h2>
+                <p>Apple m1 chip with 9-core CPU with 5 performance cores and 4 efficiency cores, 7 core.2.0GHz
+                    quad-core 10th-generation Intel Core i5 processor with Intel Iris Plus Graphics</p>
+
+
+                <h5 class="mt-5">memory</h5>
+
+                <button id="price8gb" type="button" class="btn btn-light border border-dark gx-4">8GB unified memory</button>
+                <button id="price16gb" type="button" class="btn btn-light border border-dark">16GB unified memory</button>
+
+
+                <h5 class="mt-5">Storage</h5>
+                <button id="price256gb" type="button" class="btn btn-light border border-dark gx-4">256GB SSD storage</button>
+                <button id="price512gb" type="button" class="btn btn-light border border-dark gx-4">512GB SSD storage</button>
+                <button id="price1tb" type="button" class="btn btn-light border border-dark gx-4">1TB SSD storage</button>
+
+                <h5 class="mt-5">Choose your delevary option</h5>
+                <button id="delivery-free" type="button" class="btn btn-light border border-dark gx-4">friday, Aug 26 FREE Prime
+                    Dellivary</button>
+                <button id="delivery-cost20" type="button" class="btn btn-light border border-dark gx-4">friday, Aug 30 Delevary charge
+                    $20</button>
+
+
+                <table class="table w-75 mt-5">
+
+                    <thead>
+                        <tr>
+                            <th scope="row">best price</th>
+                            <th scope="row">$<span id="best-price">1299</span></th>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Extra memory cost</th>
+                            <th scope="row">$<span id="cost-memory">0</span></th>
+
+                        </tr>
+                        <tr>
+                            <th scope="row">Extra storage cost</th>
+                            <th scope="row">$<span id="storage-cost">0</span></th>
+                        </tr>
+                        <tr>
+                            <th scope="row">Delivery charge</th>
+                            <th scope="col">$<span id="delivery-cost">0</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Total Price</th>
+                            <th scope="row">$<span id="total-price">1299</span></th>
+
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- promo button  -->
+                <div class="input-group mb-3 w-50 mb-5 mt-5">
+
+                    <input id="promo-input" type="text" class="form-control" placeholder="Add Promo code">
+                    <button class="btn btn-danger" type="button" id="promo">apply</button>
+                </div>
+                <!-- promo button end -->
+
+            </div>
+            <!-- right side end -->
+        </div>
+       
+        <div class="fixed-bottom bg-white border ">
+            <h2 class="text-center ">Total $<span id="discount-total">1299</span></h2>
+        </div>
+        
+    </main>
+    <!-- main area end -->
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
