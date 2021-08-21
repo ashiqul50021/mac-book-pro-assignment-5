@@ -69,6 +69,7 @@ const costMemory = document.getElementById('cost-memory');
 const costStorage = document.getElementById('storage-cost');
 const chargeDelevary = document.getElementById('delivery-cost');
 function updateTotal() {
+    const discountPrice = document.getElementById('discount-total');
     const totalPrice = document.getElementById('total-price');
     const bestPriceText = bestPrice.innerText;
     const parseBestPrice = parseFloat(bestPriceText);
@@ -78,6 +79,7 @@ function updateTotal() {
     const parsecostStorage = parseFloat(costStorageText);
     const deliveryCostText = chargeDelevary.innerText;
     const parseDeliveryCost = parseFloat(deliveryCostText);
+    discountPrice.innerText = parseBestPrice + parsecostMemory + parsecostStorage + parseDeliveryCost;
     totalPrice.innerText = parseBestPrice + parsecostMemory + parsecostStorage + parseDeliveryCost;
     return parseFloat(totalPrice.innerText);
 };
